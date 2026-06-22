@@ -230,20 +230,20 @@
         <div class="page-header"><h1>וירטואליזציה וסביבות VDI מאובטחות</h1><p>הקצאה דינמית ומבודדת של שרתים ומכונות וירטואליות בארגון.</p></div>
         <img src="https://images.unsplash.com/photo-1597839219216-a773cb2473e4?w=1200&auto=format&fit=crop&q=80" class="hero-img" alt="Virtualization Systems">
         <div class="card">
-            <h3>הקצאת זימון למכונה וירטואלית (VM RAM Allocation)</h3>
+            <h3>הקצאת זיכרון למכונה וירטואלית (VM RAM Allocation)</h3>
             <input type="range" min="4" max="128" value="64" class="slider" oninput="document.getElementById('ramVal').innerText = this.value">
             <p style="font-weight:bold;">משאבים מוקצים: <span id="ramVal" style="color:var(--secondary);">64</span> GB RAM</p>
         </div>
     </div>
 
-    <!-- 14. אודות והחזון (עם תמונת המשתמש) -->
+    <!-- 14. אודות והחזון -->
     <div id="p14" class="page">
         <div class="page-header"><h1>אודות Nexura-Al-Hamed</h1><p>הובלת פרויקטים טכנולוגיים מורכבים והקשחת תשתיות מדינה בהובלת Jibreel.</p></div>
         <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1200&auto=format&fit=crop&q=80" class="hero-img" alt="Futuristic Tech Team">
         
         <div class="card" style="display: flex; gap: 25px; align-items: center; flex-wrap: wrap;">
-            <!-- תמונת הפרופיל שלך שנטענת מקומית -->
-            <img src="jibreel.jpg" alt="Jibreel Profile Picture" style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover; border: 2px solid var(--primary); background: #111827; box-shadow: 0 0 15px rgba(0,255,170,0.2);">
+            <!-- קריאה ישירה לתמונה jibreel.jpg שנמצאת אצלך בריפו -->
+            <img src="jibreel.jpg" onerror="this.onerror=null; this.src='https://ui-avatars.com/api/?name=Jibreel&background=0b1329&color=00ffaa&size=150&bold=true'" alt="Jibreel Profile Picture" style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover; border: 2px solid var(--primary); background: #111827; box-shadow: 0 0 15px rgba(0,255,170,0.2);">
             
             <div style="flex: 1; min-width: 250px;">
                 <h4 style="color:#fff; margin-bottom: 8px; font-size:1.2rem;">ניהול טכנולוגי וארכיטקטורת סייבר</h4>
@@ -266,7 +266,7 @@
     <a href="https://wa.me/972525940084?text=שלום+גבריאל+הגעתי+ממערכת+ההייטק+המורחבת+שלך" target="_blank" class="wa-float">💬 פתח קריאה מול Jibreel</a>
 
     <script>
-        // ניווט מהיר ואינטליגנטי בין הדפים
+        // ניווט מהיר בין הדפים
         function switchPage(pageId) {
             document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
             document.querySelectorAll('nav a').forEach(a => a.classList.remove('active'));
